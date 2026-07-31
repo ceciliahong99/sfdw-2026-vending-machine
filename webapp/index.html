@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SFDW Vending Machine</title>
+    <link rel="stylesheet" href="./styles.css?v=20260610-restore-pre-header" />
+  </head>
+  <body>
+    <main class="kiosk-shell" aria-label="SFDW vending machine display">
+      <section class="figma-frame" data-screen="step-01-vertical-roll">
+        <div class="vertical-roll" data-reel>
+          <div class="reel-chrome" aria-hidden="true">
+            <div class="chrome-line chrome-line-top"></div>
+            <div class="chrome-line chrome-line-middle"></div>
+            <div class="chrome-line chrome-line-bottom"></div>
+            <div class="chrome-floor"></div>
+          </div>
+
+          <div class="reel-window" aria-live="off">
+            <div class="reel-strip" data-reel-strip></div>
+          </div>
+          <div class="horizontal-selector" data-horizontal-selector aria-hidden="true"></div>
+
+          <div class="reel-shade reel-shade-top" aria-hidden="true"></div>
+          <div class="reel-shade reel-shade-bottom" aria-hidden="true"></div>
+        </div>
+
+        <div class="machine-reveal-shade" data-machine-reveal-shade aria-hidden="true"></div>
+        <div class="selected-card-stage" data-selected-card-stage aria-hidden="true">
+          <img class="selected-card-image selected-card-image-state is-active" data-selected-card-image-state="1" alt="" />
+          <img class="selected-card-image selected-card-image-state" data-selected-card-image-state="2" alt="" />
+        </div>
+      </section>
+
+      <aside class="fact-preview" data-fact-preview aria-live="polite" aria-hidden="true">
+        <div class="fact-preview-status" data-fact-preview-status>Waiting for selection</div>
+        <div class="receipt-preview-sheet">
+          <div class="receipt-preview-address">
+            <div>NEW DEAL DESIGN</div>
+            <div>333 BRYANT ST #190</div>
+          </div>
+          <img class="receipt-preview-profile" data-fact-preview-profile alt="" hidden />
+          <h1 class="fact-preview-name" data-fact-preview-name>--</h1>
+          <div class="receipt-preview-intro" data-fact-preview-intro></div>
+          <p class="fact-preview-role" data-fact-preview-role></p>
+          <div class="receipt-preview-divider"></div>
+          <div class="receipt-preview-section-label">Where to find...</div>
+          <p class="fact-preview-where" data-fact-preview-where></p>
+          <div class="receipt-preview-divider"></div>
+          <div class="receipt-preview-section-label" data-fact-preview-fact-title>Fun fact...</div>
+          <p class="fact-preview-fact" data-fact-preview-fact>Select a card to preview its receipt data.</p>
+          <div class="receipt-preview-divider"></div>
+          <p class="fact-preview-callout" data-fact-preview-callout></p>
+          <div class="receipt-preview-divider"></div>
+          <div class="receipt-preview-heart">&lt;3</div>
+        </div>
+        <div class="fact-preview-meta" data-fact-preview-meta></div>
+      </aside>
+
+      <aside class="roster-qa" data-roster-qa aria-label="Roster QA" aria-hidden="true">
+        <div class="roster-qa-title">Roster QA</div>
+        <div class="roster-qa-current" data-roster-qa-current>Random mode</div>
+        <div class="roster-qa-list" data-roster-qa-list></div>
+      </aside>
+    </main>
+
+    <script type="module" src="./app.js?v=20260611-figma-idle"></script>
+  </body>
+</html>

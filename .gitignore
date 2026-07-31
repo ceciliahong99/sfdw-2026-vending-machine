@@ -1,0 +1,11 @@
+.DS_Store
+
+# Local runtime output
+service/logs/
+service/print-jobs/
+
+# Generated AirDrop / migration archives
+*.tar.gz
+
+# Dependency folders if installed locally later
+node_modules/
